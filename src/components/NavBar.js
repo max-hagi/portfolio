@@ -5,6 +5,8 @@ import {useState, useEffect} from "react";
 import ghlogo from "../assets/github-icon.svg"
 import lilogo from "../assets/linkedin-icon.svg"
 import iglogo from "../assets/instagram-icon.svg"
+import logo from "../assets/gamatatsu.webp"
+import "./NavBar.css"
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
@@ -32,7 +34,7 @@ export const NavBar = () =>{
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={""} alt={""}/>
+                    <img width={50} onClick={() => onUpdateActiveLink("home")} src={logo} alt={"Gamatatsu"}/>
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -42,6 +44,7 @@ export const NavBar = () =>{
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === "home" ? "active navbar-link":"navbar-link"} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
+                        <Nav.Link href="#about-me" className={activeLink === "about-me" ? "active navbar-link":"navbar-link"} onClick={() => onUpdateActiveLink("about-me")}>About Me</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === "skills" ? "active navbar-link":"navbar-link"} onClick={() => onUpdateActiveLink("skills")}>Skills</Nav.Link>
                         <Nav.Link href="#projects" className={activeLink === "projects" ? "active navbar-link":"navbar-link"} onClick={() => onUpdateActiveLink("projects")}>Projects</Nav.Link>
                     </Nav>
