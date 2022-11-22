@@ -7,7 +7,6 @@ import lilogo from "../assets/linkedin-icon.svg"
 import iglogo from "../assets/instagram-icon.svg"
 import logo from "../assets/gamatatsu.webp"
 import "./NavBar.css"
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 export const NavBar = () =>{
@@ -54,7 +53,7 @@ export const NavBar = () =>{
                             <a href="https://github.com/max-hagi" target={"_blank"} rel="noreferrer"><img src={ghlogo} alt={"GitHub Logo"} /> </a>
                             <a href="https://www.instagram.com/max.hagi/" target={"_blank"} rel="noreferrer"><img src={iglogo} alt={"Instagram Logo"} /> </a>
                         </div>
-                        <button className="vvd" onClick={() => console.log("Connect")}><span>Let's Connect</span></button>
+                        <button className="connect-btn" onClick={() => console.log("Connect")}><span>Let's Connect</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>

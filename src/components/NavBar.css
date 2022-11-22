@@ -5,9 +5,10 @@ nav.navbar {
     top: 0;
     z-index: 9999;
     transition:  0.32s ease-in-out;
+    background-color: #25282d;
 }
 nav.navbar.scrolled {
-    padding: 0px 0;
+    padding: 0 0;
     background-color: #121212;
 }
 nav.navbar a.navbar-brand {
@@ -82,7 +83,7 @@ span.navbar-text {
 }
 .navbar-text button::before {
     content: "";
-    width: 0%;
+    width: 0;
     height: 100%;
     position: absolute;
     background-color: #fff;
@@ -144,4 +145,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
+}
+
+.connect-btn {
+
+    margin-left: 12px;
+
 }
