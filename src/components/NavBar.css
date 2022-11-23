@@ -5,18 +5,18 @@ nav.navbar {
     top: 0;
     z-index: 9999;
     transition:  0.32s ease-in-out;
-    background-color: #25282d;
+    background-color: #222831;
 }
 nav.navbar.scrolled {
     padding: 0 0;
-    background-color: #121212;
+    background-color: #000000;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
-    color: #fff !important;
+    color: #EEEEEE !important;
     letter-spacing: 0.8px;
     padding: 0 25px;
     font-size: 18px;
@@ -37,21 +37,21 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: #EEEEEE;
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid #222831;
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #00ADB5;
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
@@ -86,7 +86,7 @@ span.navbar-text {
     width: 0;
     height: 100%;
     position: absolute;
-    background-color: #fff;
+    background-color: #00ADB5;
     left: 0;
     top: 0;
     z-index: -1;
@@ -101,10 +101,14 @@ span.navbar-text {
     height: 100%;
     position: absolute;
 }
+
+/*For the navbar expand icon*/
 nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:hover,
 nav.navbar .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
+    background-color: #666666;
 }
 nav.navbar .navbar-toggler-icon {
     width: 24px;
@@ -133,6 +137,7 @@ nav.navbar .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler-icon:after {
     top: 8px;
 }
+
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
     transform: rotate(45deg);
     background-color: #fff;
@@ -147,8 +152,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
 }
 
-.connect-btn {
-
-    margin-left: 12px;
-
+@media only screen and (max-width: 600px) {
+    .connect-btn {
+        width: fit-content;
+        height: fit-content;
+    }
 }
