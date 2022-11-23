@@ -1,7 +1,8 @@
 import {Row, Col, Container} from "react-bootstrap";
 import {useState, useEffect} from "react";
 import TrackVisibility from "react-on-screen";
-import "./Banner.css"
+import "./Banner.css";
+import bannerImg from "../assets/memoji.PNG";
 
 export const Banner = () => {
 
@@ -12,7 +13,7 @@ export const Banner = () => {
     const [index, setIndex] = useState(1);
     const [isWestern, setIsWestern] = useState(false);
     const rotatingItems = ["CS Student", "Western University", "Software Dev"];
-    const period = 2000;
+    const period = 1000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -65,7 +66,7 @@ export const Banner = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-
+                                    <img src={bannerImg} alt="Header Img"/>
                                 </div>}
                         </TrackVisibility>
                     </Col>
