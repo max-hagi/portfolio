@@ -154,7 +154,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @media only screen and (max-width: 600px) {
     .connect-btn {
+        display: inline-block;
         width: fit-content;
         height: fit-content;
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        margin-top: 20px;
     }
 }
