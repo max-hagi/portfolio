@@ -14,6 +14,8 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
     width: 9%;
 }
+
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
     color: #EEEEEE !important;
@@ -153,14 +155,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media only screen and (max-width: 600px) {
-    .connect-btn {
-        display: inline-block;
-        width: fit-content;
-        height: fit-content;
+    .navbar-text {
         margin-top: 20px;
     }
-
-    .social-icon {
-        margin-top: 20px;
+    .social-icon{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .connect-btn {
+        margin-right: auto;
     }
 }
