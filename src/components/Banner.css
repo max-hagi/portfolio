@@ -63,6 +63,10 @@
         transform: translateY(-20px);
     }
 }
-.txt-rotate > .wrap {
-    border-right: 0.08em solid #666;
+.txt-rotate > .rotating {
+    border-right: 0.08em solid #EEEEEE;
+}
+
+.txt-rotate > .rotating-purple {
+    border-right: 0.08em solid #EEEEEE;
 }
