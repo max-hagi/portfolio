@@ -5,7 +5,7 @@ import {useState, useEffect} from "react";
 import ghlogo from "../assets/github-icon.svg"
 import lilogo from "../assets/linkedin-icon.svg"
 import iglogo from "../assets/instagram-icon.svg"
-import logo from "../assets/gamatatsu.webp"
+import homelogo from "../assets/home-icon.svg"
 import "./NavBar.css"
 
 
@@ -33,7 +33,7 @@ export const NavBar = () =>{
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img width={50} onClick={() => onUpdateActiveLink("home")} src={logo} alt={"Gamatatsu"}/>
+                    <img width={50} onClick={() => onUpdateActiveLink("home")} src={homelogo} alt={"Gamatatsu"}/>
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
