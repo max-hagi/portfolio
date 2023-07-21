@@ -1,0 +1,15 @@
+.project{
+    padding-top: 20px;
+}
+
+.tabs { /* Doesnt work */
+    padding-top: 40px;
+}
+
+.pills {
+    padding-top: 50px;
+}
+
+.nav-item {
+    padding-left: 20px;
+}
