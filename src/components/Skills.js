@@ -30,9 +30,11 @@ export const Skills = () => {
         <section className="skill" id="skill">
             <div className="carousel-box">
                 <div className="overhead-description">
-                    <h1>Skills</h1>
-                    <p>abcdefghig klmnop <br></br> qrstuv wx yz</p>
+                    <h1>About Me</h1>
+                    <p>
+                    I'm a student at Western Univsersity working towards and honours spec in computer science and a minor in game development.<br></br>I have experience working on self-driven and collaborative software development projects using agile methodologies.</p>
                 </div>
+
                 <div className="carousel-slider">
                     <Carousel responsive={responsive} infinite={true}>
                         <Carousel.Item className="carousel-item">      
@@ -43,7 +45,7 @@ export const Skills = () => {
                             /> 
                             <Carousel.Caption className="carousel-caption">
                                 <h5> Object Oriented Programming </h5>    
-                                <p>test</p>
+                                <p>C++, Python, Java</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item className="carousel-item">      
@@ -54,8 +56,8 @@ export const Skills = () => {
                             /> 
 
                             <Carousel.Caption className="carousel-item-caption">
-                                <h5> Object Oriented Programming </h5>    
-                                <p>C++, Python, Java</p>
+                                <h5>Web Development</h5>    
+                                <p>ReactJS, Bootstrap CSS</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item className="carousel-item">      
@@ -65,7 +67,7 @@ export const Skills = () => {
                             alt="Object Oriented Programming"
                             /> 
                             <Carousel.Caption className="carousel-caption">
-                                <h5>Customer Service</h5>    
+                                <h5>Leadership</h5>    
                                 <p>d</p>
                             </Carousel.Caption>
                         </Carousel.Item>

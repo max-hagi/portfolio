@@ -4,7 +4,7 @@
 }
 
 .carousel-box{
-    background: #222831;
+    background: #393E46;
     border-radius: 40px;
     text-align: center;
     padding: 60px 70px;
@@ -17,12 +17,20 @@
 }
 
 .overhead-description {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.overhead-description h1{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.overhead-description p {
+    font-size: 18px;
 }
 
 .carousel-item{
     padding-bottom: 100px;
-    padding-top: auto;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
